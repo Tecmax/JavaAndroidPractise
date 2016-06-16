@@ -1,0 +1,28 @@
+SMAP
+reg_jsp.java
+JSP
+*S JSP
+*F
++ 0 reg.jsp
+reg.jsp
++ 1 head.jsp
+inc/head.jsp
++ 2 headbeforelogin.jsp
+inc/headbeforelogin.jsp
++ 3 footer.jsp
+inc/footer.jsp
+*L
+1:51
+1#1,18:52
+2#0,4:70
+1#2,35:74
+5#0,24:109
+30,3:135
+32:138
+33:139,3
+34,2:142
+36,4:145
+39,70:149
+1#3,17:219
+108#0,11:235
+*E

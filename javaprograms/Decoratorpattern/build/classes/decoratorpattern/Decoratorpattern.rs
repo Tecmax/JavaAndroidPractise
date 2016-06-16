@@ -1,0 +1,3 @@
+BaseClass$1DecorationClass2
+BaseClass$1DecorationClass1
+BaseClass

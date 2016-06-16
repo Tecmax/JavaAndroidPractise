@@ -1,0 +1,10 @@
+package StringHandling;
+
+
+import java.io.*;
+
+public class ReverseSentence {
+	public static void main(String[] args) {
+		BufferedReader br = new BufferedReader(new InputStream(System.in));
+	}
+}

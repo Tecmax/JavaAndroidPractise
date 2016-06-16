@@ -1,0 +1,11 @@
+package Multithreading;
+
+public class MTC1 extends Thread{
+	public void run(){
+		System.out.println("Hi this is example of 'thread'");
+	}
+	public static void main(String[] args) {
+		MTC1 mtc = new MTC1();
+		mtc.start();
+	}
+}

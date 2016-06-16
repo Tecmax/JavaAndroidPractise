@@ -1,0 +1,15 @@
+package Combination;
+
+import java.util.Scanner;
+public class Secondd {
+	public static void main(String[] args) {
+		Secondd obj = new Secondd();
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter Stud Name");
+		String name = sc.next();
+		System.out.println("Enter Stud id");
+		String ID = sc.nextInt();
+		System.out.println("Enter Stud Name");
+		String name = sc.next();
+	}
+}

@@ -10,7 +10,6 @@ public class StringToken {
 
 		// specify delimiter as " " space
 		StringTokenizer st = new StringTokenizer(strLine, " ");
-
 		String strReversedLine = "";
 
 		while (st.hasMoreTokens()) {

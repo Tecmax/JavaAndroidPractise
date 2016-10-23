@@ -15,7 +15,7 @@ public class StackOverFlow {
 			StackOverFlow.recursivePrint(1);
 		} catch (StackOverflowError e) {
 			System.out.println("Unending Loop");
-			e.printStackTrace();
+//			e.printStackTrace();
 		}
 	}
 }

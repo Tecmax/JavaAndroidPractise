@@ -6,7 +6,7 @@ public abstract class Confsed {
 	}
 
 	public abstract int anotherConfsedMethod(int a);
-
+	public abstract int anotherConfsedMethod(float a);
 	public void anotherConfsedMethod() {
 		System.out.print("Inside Confsed method");
 	}

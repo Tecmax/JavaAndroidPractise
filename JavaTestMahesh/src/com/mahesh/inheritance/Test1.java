@@ -45,6 +45,7 @@ public class Test1 {
 		b1.setSpeed(200);
 		b1.setSize(22);
 		b1.CC = 1000;
+		b1.setSpeed(100);
 		b1.gears = 5;
 		// The subclass refers to the members of the superclass
 		System.out.println("Color of Car : " + b1.color);

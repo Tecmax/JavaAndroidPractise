@@ -21,9 +21,15 @@ class FourWheeler extends AbstractVehicle {
 		System.out.println("i am in main engine");
 	}
 
+	public int speed(int a) {
+
+		System.out.println("i am in main speed");
+		return 0;
+	}
+
 	public static void main(String[] args) {
 		System.out.println("main method");
-		AbstractVehicle dsds = new FourWheeler();
+		FourWheeler dsds = new FourWheeler();
 		dsds.color();
 		dsds.speed();
 		dsds.engine();
@@ -31,6 +37,7 @@ class FourWheeler extends AbstractVehicle {
 
 	@Override
 	public int speed() {
+
 		System.out.println("i am in speed");
 		return 0;
 	}

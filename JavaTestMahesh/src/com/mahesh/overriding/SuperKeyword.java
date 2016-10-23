@@ -6,7 +6,7 @@ class ABC {
 	}
 }
 
-class SuperKeyWord extends ABC {
+class SuperKeyword extends ABC {
 	public void mymethod() {
 		// This will call the mymethod() of parent class
 		super.mymethod();
@@ -14,7 +14,7 @@ class SuperKeyWord extends ABC {
 	}
 
 	public static void main(String args[]) {
-		SuperKeyWord obj = new SuperKeyWord();
+		SuperKeyword obj = new SuperKeyword();
 		obj.mymethod();
 	}
 }

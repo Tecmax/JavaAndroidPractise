@@ -8,7 +8,7 @@ public class CompareTo {
 		System.out.println("str1 compareTo to str2:" + str1.compareTo(str2));
 		System.out.println("str1 compareTo to str3:" + str1.compareTo(str3));
 		System.out.println("str1 compareTo to Welcome:" + str1.compareTo("Welcome"));
-		System.out.println("str1 compareTo to Hello:" + str1.compareTo("Hello"));
+		System.out.println("str1 compareTo to Hello:" + str2.compareTo("Hello"));
 		System.out.println("str1 compareTo to hello:" + str1.compareTo("hello"));
 	}
 }

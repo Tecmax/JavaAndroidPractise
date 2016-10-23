@@ -9,13 +9,24 @@ public class Employ {
 	private int empAge;
 	private String empGender;
 	private int empMobileNo;
+	private String StudentN;
+	private int StudentId;
+	private String StudentAdd;
 
-	public int getEmpMobileNo() {
-		return empMobileNo;
+	public String getStudentN() {
+		return StudentN;
 	}
 
-	public void setEmpMobileNo(int empMobileNo) {
-		this.empMobileNo = empMobileNo;
+	public void setStudentN(String studentN) {
+		StudentN = studentN;
+	}
+
+	public String getStudentAdd() {
+		return StudentAdd;
+	}
+
+	public void setStudentAdd(String studentAdd) {
+		StudentAdd = studentAdd;
 	}
 
 	public String getEmpNme() {
@@ -24,6 +35,14 @@ public class Employ {
 
 	public void setEmpNme(String empNme) {
 		this.empNme = empNme;
+	}
+
+	public int getEmpMobileNo() {
+		return empMobileNo;
+	}
+
+	public void setEmpMobileNo(int empMobileNo) {
+		this.empMobileNo = empMobileNo;
 	}
 
 	public int getEmpId() {

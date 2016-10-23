@@ -18,11 +18,10 @@ public class ArrayListEx {
 		obj.add("Anuj");
 
 		/* Displaying array list elements */
-		System.out.println("Currently the array list has following elements:"
-				+ obj);
-		
+		System.out.println("Currently the array list has following elements:" + obj);
+
 		obj.add(0, "Rahul");
-		obj.add(1, "Justin");
+		obj.add(4, "Justin");
 		System.out.println("Current Index Add array list is:" + obj);
 		/* Add element at the given index */
 		obj.add("Rahul");
@@ -32,10 +31,11 @@ public class ArrayListEx {
 		/* Remove elements from array list like this */
 		obj.remove("Chaitanya");
 		obj.remove("Harry");
-		int pos = obj.indexOf("Tom");
-		String str= obj.get(2);
+		int pos = obj.indexOf("Rahul");
+		String str = obj.get(2);
 		int numberofitems = obj.size();
-		System.out.println("Current array list position stringvalue size is:" + obj + pos +str+numberofitems);
+		System.out.println("Current array list position stringvalue size is:" + "\n" + obj + "\n" + pos + "\n" + str
+				+ "\n" + numberofitems);
 		boolean adc = obj.contains("Steve");
 		System.out.println("Current bool array list is:" + adc);
 
@@ -43,5 +43,6 @@ public class ArrayListEx {
 		obj.remove(1);
 		obj.clear();
 		System.out.println("Current array list is:" + obj);
+		ArrayList<Integer> fds = new ArrayList<>();
 	}
 }

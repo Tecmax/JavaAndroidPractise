@@ -15,7 +15,7 @@ public class ExceptionChecked {
 			fis = new FileInputStream("C:/Softgen/mahesh.txt");
 		} catch (FileNotFoundException fnfe) {
 			System.out.println("The specified file is not "
-					+ "present at the given path");
+					+ "present at the given path" +fnfe);
 		}
 		int k;
 		try {
@@ -36,7 +36,12 @@ public class ExceptionChecked {
 			}
 			fis.close();
 		} catch (IOException ioe) {
-			System.out.println("I/O error occurred: " + ioe);
+			System.out.println("I/O error occurred: " );
+			ioe.printStackTrace();
+			
 		}
+	}
+	private void name() throws FileNotFoundException {
+		FileInputStream fis = new FileInputStream("C:/Softgen/mahesh.txt");
 	}
 }

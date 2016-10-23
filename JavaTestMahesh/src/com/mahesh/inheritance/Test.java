@@ -38,5 +38,6 @@ public class Test {
 		b1.CC = 1000;
 		b1.gears = 5;
 		b1.attributescar();
+		b1.attributes();
 	}
 }

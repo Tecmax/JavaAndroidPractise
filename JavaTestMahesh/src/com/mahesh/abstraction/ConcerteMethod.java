@@ -6,13 +6,25 @@ abstract class AbstractDemo {
 	}
 
 	public abstract int anotherMethod(int a);
-
+	public abstract void testAnotherMethod(int a);
 	public void anotherMethod() {
 		System.out.print("Inside Abstract method");
 	}
 }
 
-public class ConcerteMethod extends AbstractDemo {
+abstract class AbstractDemo1 extends AbstractDemo {
+	public void myMethod() {
+		System.out.println("Hello");
+	}
+
+	public abstract int anotherMethod(int a);
+	public abstract void testAnotherMethod(int a);
+	public void anotherMethod() {
+		System.out.print("Inside Abstract method");
+	}
+}
+
+public class ConcerteMethod extends AbstractDemo1{
 	public void anotherMethod() {
 		System.out.print("Abstract method");
 	}
@@ -23,6 +35,12 @@ public class ConcerteMethod extends AbstractDemo {
 		int dsa = obj.anotherMethod(32);
 		System.out.print("Abstract method" + dsa);
 		obj.myMethod();
+	}
+
+
+	@Override
+	public void testAnotherMethod(int a) {
+		System.out.print("inside testAnotherMethod");		
 	}
 
 	@Override

@@ -13,6 +13,6 @@ public class RegionMatchesExample {
 		System.out.println(str1.regionMatches(7, str3, 0, 3));
 
 		System.out.print("Result of Test3: ");
-		System.out.println(str1.regionMatches(true, 7, str3, 0, 3));
+		System.out.println(str1.regionMatches(false, 7, str3, 0, 3));
 	}
 }

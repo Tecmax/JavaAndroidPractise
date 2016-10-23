@@ -10,10 +10,10 @@ public class MethodsExample {
 		} else {
 			System.out.println("Coontains String " + inteexample);
 		}
-		// obj.add(10,20);
-		// obj.add(10,20,24);
-		// obj.add(10, 20);
-		// obj.add(10, 20, 24);
+		 obj.add(10,20);
+		 obj.add(10,20,24);
+		 obj.add(10, 20);
+		 obj.add(10, 20, 24);
 	}
 
 	boolean isValidInteger(String number) {

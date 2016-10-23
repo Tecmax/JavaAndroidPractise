@@ -4,7 +4,7 @@ public class EmployDet {
 	public static void main(String[] args) {
 		Employ empObj = new Employ();
 		empObj.setEmpSalary(3323);
-		empObj.setEmpNme("mahesh");
+		empObj.setEmpNme("Latha");
 		empObj.setEmpId(223);
 		empObj.setEmpGender("male");
 		empObj.setEmpBatch(21);

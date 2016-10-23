@@ -15,6 +15,6 @@ public class LowerUpper {
 	       System.out.println(str.toUpperCase());
 
 	       //By specifying Locale
-	       System.out.println(str.toUpperCase(Locale.CHINA));
+	       System.out.println(str.toUpperCase(Locale.ENGLISH));
 	   }
 }

@@ -2,25 +2,22 @@ package com.mahesh.interfaces;
 
 interface MyInterface {
 	abstract void method1();
-
 	void method2();
 }
 
-interface MyInterface1 {
+interface MyInterface1 extends MyInterface{
 	public void method1();
 
 	public void method4();
 }
 
-class Interf implements MyInterface, MyInterface1 {
+class Interf implements MyInterface,MyInterface1 {
 
 	public static void main(String arg[]) {
 		System.out.println("inside mainmethod");
 		Interf obj = new Interf();
 		obj.method1();
 		obj.method2();
-		// MyInterface1 obj1 = new Interf();
-		// obj1.method3();
 		obj.method4();
 	}
 

@@ -9,8 +9,15 @@ public class RuntimeException {
 		 * ArithmeticException
 		 */
 		try {
+			int res1 = num1 / num2;
+		} catch (ArithmeticException e1) {
+			e1.printStackTrace();
+		}
+		try {
 			int res = num1 / num2;
 			System.out.println(res);
+			int mod = num1 % num2;
+			System.out.println(mod);
 		} catch (ArithmeticException e) {
 			System.out.println("Do Properly");
 			e.printStackTrace();

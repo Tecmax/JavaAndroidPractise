@@ -1,7 +1,7 @@
 package com.mahesh.exceptionHandelling;
 
 public class ClassNotFound {
-	private static final String CLASS_TO_LOAD = "com.mahesh.exceptionHandelling.ExceptionChecked";
+	private static final String CLASS_TO_LOAD = "com.mahesha.exceptionHandelling.ExceptionChecked";
 
 	public static void main(String[] args) {
 		try {

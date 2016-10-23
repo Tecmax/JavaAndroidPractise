@@ -9,11 +9,12 @@ public class ThreadTwiceExample implements Runnable {
 	}
 
 	public static void main(String args[]) {
-		Thread th1 = new Thread();
+		Thread th1 = new Thread(new ThreadTwiceExample(), "th1");
 		Thread th2 = new Thread(new ThreadTwiceExample(), "th2");
 		th1.start();
-		th1.start();
+//		th2.start();
 //		th2.run();
-//		th2.run();
+		th1.run();
+		th1.run();
 	}
 }

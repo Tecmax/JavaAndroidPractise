@@ -5,8 +5,8 @@ public class StringIndexBound {
 		try {
 			String str = "easysteps2buildwebsite";
 			System.out.println(str.length());
-			;
-			char c = str.charAt(0);
+			char c = str.charAt(10);
+			System.out.println(c);
 			c = str.charAt(40);
 			System.out.println(c);
 		} catch (StringIndexOutOfBoundsException e) {

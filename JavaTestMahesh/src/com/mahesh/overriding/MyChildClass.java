@@ -1,8 +1,11 @@
 package com.mahesh.overriding;
 
 class MyBaseClass {
-	protected void dispq() {
+	public void dispq() {
 		System.out.println("Parent class method");
+	}
+	public static void main(String[] args) {
+		System.out.println("Hello method");
 	}
 }
 
@@ -12,7 +15,7 @@ class MyChildClass extends MyBaseClass {
 	}
 
 	public static void main(String args[]) {
-		MyChildClass obj = new MyChildClass();
+		MyBaseClass obj = new MyChildClass();
 		obj.dispq();
 	}
 }

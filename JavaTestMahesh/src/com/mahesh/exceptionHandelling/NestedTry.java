@@ -15,8 +15,10 @@ public class NestedTry {
 			// Child try block2
 			try {
 				System.out.println("Inside block2");
-				int b = 45 / 0;
+				float b = (45f / 10);
 				System.out.println(b);
+				int b1 = 45 % 10;
+				System.out.println(b1);
 			} catch (ArrayIndexOutOfBoundsException e2) {
 				System.out.println("Exception: e2");
 			}

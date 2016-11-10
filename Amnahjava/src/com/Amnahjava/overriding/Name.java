@@ -1,20 +1,20 @@
 package com.Amnahjava.overriding;
 
-abstract class Amnah {
+abstract class AMNAH {
 	abstract void add();
 	
 
-	void sub() {
+	void sub1() {
 		System.out.println("sub");
 	}
-	void sub(int i){
+	void sub1(int i){
 		i=54;
 		System.out.println(i);
 	
 	}
 
 }
-abstract class Khatun extends Amnah //we can't have instance of the body
+abstract class Khatun extends AMNAH //we can't have instance of the body
 {
 	void mul()
 	{
@@ -31,7 +31,7 @@ class Name extends Khatun{
 	public static void main(String[] args) {
 		Name obj = new Name();
 		obj.add();
-		obj.sub();
+		obj.sub1();
 		obj.mul();
 	}
 

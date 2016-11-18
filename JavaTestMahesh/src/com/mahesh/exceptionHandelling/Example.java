@@ -12,6 +12,7 @@ public class Example {
 	static {
 		/* Store the first 10 characters of the input message. */
 		subMessage = message.substring(0, 10);
+		
 	}
 
 	public String getSubMessage() {

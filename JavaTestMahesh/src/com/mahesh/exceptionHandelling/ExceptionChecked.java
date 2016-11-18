@@ -9,17 +9,17 @@ import java.io.IOException;
 
 public class ExceptionChecked {
 	public static void main(String args[]) {
-		String content = "Hello Mahesh";
+		String content = "Hello Vishwa";
 		FileInputStream fis = null;
 		try {
-			fis = new FileInputStream("C:/Softgen/mahesh.txt");
+			fis = new FileInputStream("D:/java programs/vishwa.txt");
 		} catch (FileNotFoundException fnfe) {
 			System.out.println("The specified file is not "
 					+ "present at the given path");
 		}
 		int k;
 		try {
-			File file = new File("C:/Softgen/mahesh.txt");
+			File file = new File("D:/java programs/vishwa.txt");
 			// if file doesnt exists, then create it
 			if (!file.exists()) {
 				file.createNewFile();

@@ -1,0 +1,10 @@
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="app_name">ActivityExamples</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="welcome">accueil</string>
+    <string name="email">adresse e-mail</string>
+    <string name="password">mot de passe</string>
+    <string name="login">connexion</string>
+    <string name="signup">Ne pas avoir un compte? signer</string>
+    <string name="title_activity_launcher">Lanceur Activite</string>
+</resources>

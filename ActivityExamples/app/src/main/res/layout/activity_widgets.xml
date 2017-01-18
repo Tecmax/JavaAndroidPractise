@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_widgets"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.mahesha.activityexamples.WidgetsActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Button Example"
+                android:typeface="sans" />
+
+            <Button
+                android:id="@+id/bt_textview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="TextView Example" />
+
+            <Button
+                android:id="@+id/bt_checkbox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="CheckBox Example" />
+
+            <Button
+                android:id="@+id/bt_radio"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Radio Example" />
+
+            <Button
+                android:id="@+id/switchex"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Switch Example" />
+
+            <Button
+                android:id="@+id/bt_toggle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Toggle Example" />
+
+            <Button
+                android:id="@+id/image_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="ImageButton Example" />
+
+            <Button
+                android:id="@+id/image_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="ImageView Example" />
+
+            <Button
+                android:id="@+id/progress_bar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Progress Example" />
+
+            <Button
+                android:id="@+id/seek"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="cursive"
+                android:text="SeekBar Example"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/rating"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Rating Bar Example" />
+
+            <Button
+                android:id="@+id/spinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Spinner Example" />
+
+            <Button
+                android:id="@+id/snack_Bar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Snack Bar Example" />
+
+            <Button
+                android:id="@+id/menus_example"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Menus Example" />
+
+            <Button
+                android:id="@+id/canvas_example"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Canvas Example" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"></LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

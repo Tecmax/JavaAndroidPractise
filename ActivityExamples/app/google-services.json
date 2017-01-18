@@ -1,0 +1,90 @@
+{
+  "project_info": {
+    "project_number": "29119297558",
+    "project_id": "activity-examples"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:29119297558:android:47e09fe0dc76e439",
+        "android_client_info": {
+          "package_name": "com.example.mahesha"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "29119297558-g90ig8q0jcv88ldrh5vfv0qopfmnsk7a.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.mahesha",
+            "certificate_hash": "E0C436EC43CA4DA6AE346939063BC7192D129CD4"
+          }
+        },
+        {
+          "client_id": "29119297558-qot006s58lp1bfif5mttvv7o9p4lfnup.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDP1nuvboRKZm3gZebDfdWm7k1NEyrSk7U"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:29119297558:android:89951dd3f45ad23f",
+        "android_client_info": {
+          "package_name": "com.example.mahesha.activityexamples"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "29119297558-ubmulcj9r8goorssa3r0bvhmc3mp85kr.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.mahesha.activityexamples",
+            "certificate_hash": "E0C436EC43CA4DA6AE346939063BC7192D129CD4"
+          }
+        },
+        {
+          "client_id": "29119297558-qot006s58lp1bfif5mttvv7o9p4lfnup.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDP1nuvboRKZm3gZebDfdWm7k1NEyrSk7U"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 2,
+          "analytics_property": {
+            "tracking_id": "UA-85499739-2"
+          }
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -15,12 +15,13 @@ public class ImageViewActivity extends AppCompatActivity {
     Button button;
     ImageView image;
     CircularImageView circularImageView;
+    boolean isClicked;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_image_view);
         addListenerOnButton();
-        circularImageView = (CircularImageView)findViewById(R.id.circle_image);
+        circularImageView = (CircularImageView) findViewById(R.id.circle_image);
         circularImageView.setBorderColor(getResources().getColor(R.color.blue_grey_700));
         circularImageView.setBorderWidth(10);
         circularImageView.addShadow();
@@ -33,12 +34,19 @@ public class ImageViewActivity extends AppCompatActivity {
         image = (ImageView) findViewById(R.id.imageView1);
 
         button = (Button) findViewById(R.id.btnChangeImage);
+
         button.setOnClickListener(new View.OnClickListener() {
 
             @Override
             public void onClick(View arg0) {
-                image.setImageResource(R.drawable.ic_launcher);
-                circularImageView.setImageResource(R.drawable.ic_launcher);
+                if (isClicked) {
+                    isClicked = false;
+                    image.setImageResource(R.drawable.nougat);
+                } else {
+                    isClicked = true;
+                    image.setImageResource(R.drawable.thumb1);
+                }
+//                circularImageView.setImageResource(R.drawable.ic_launcher);
             }
 
         });

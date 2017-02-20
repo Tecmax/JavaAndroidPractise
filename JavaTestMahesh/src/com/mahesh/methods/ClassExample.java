@@ -1,43 +1,17 @@
 package com.mahesh.methods;
 
-import com.mahesh.interfaces.Vehicle;
+import java.util.Scanner;
 
-public class ClassExample implements Vehicle{
-	static {
-		System.out.println("I am first then the next");
-	}
+public class ClassExample {
 
 	public static void main(String[] args) {
 		 System.out.println("HEllo");
+		 Scanner obj = new Scanner(System.in);
+		 System.out.println("Enter Name");
+		 String ac = obj.next();
+		 System.out.println("Entered Name is "+ ac);
+		 obj.close();
 	}
 
-	@Override
-	public void inte() {
-		// TODO Auto-generated method stub
-		
-	}
-
-	@Override
-	public void inte1() {
-		// TODO Auto-generated method stub
-		
-	}
-
-	@Override
-	public void inte2() {
-		// TODO Auto-generated method stub
-		
-	}
-
-	@Override
-	public void inte3() {
-		// TODO Auto-generated method stub
-		
-	}
-
-	@Override
-	public void inte4() {
-		// TODO Auto-generated method stub
-		
-	}
+	
 }

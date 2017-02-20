@@ -11,6 +11,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.RelativeLayout;
 
+import com.example.mahesha.searchimp.SearchCountryActivity;
 import com.example.mahesha.widgets.ButtonActivity;
 import com.example.mahesha.widgets.CheckBoxActivity;
 import com.example.mahesha.widgets.CustomCanvasActivity;
@@ -50,7 +51,9 @@ private Context mActivity;
         Button mSeek = (Button) findViewById(R.id.seek);
         Button mRating = (Button) findViewById(R.id.rating);
         Button mSpinner = (Button) findViewById(R.id.spinner);
+        Button mSearch = (Button) findViewById(R.id.search_example);
         mButton.setOnClickListener(this);
+        mSearch.setOnClickListener(this);
         mtextViews.setOnClickListener(this);
         mCheckBox.setOnClickListener(this);
         mRadio.setOnClickListener(this);
@@ -150,7 +153,11 @@ private Context mActivity;
                 break;
             case R.id.canvas_example:
                 startActivity(new Intent(mActivity, CustomCanvasActivity.class));
-                Snackbar.make(relativeLayout, "Menus", Snackbar.LENGTH_SHORT).show();
+                Snackbar.make(relativeLayout, "Canvas", Snackbar.LENGTH_SHORT).show();
+                break;
+            case R.id.search_example:
+                startActivity(new Intent(mActivity, SearchCountryActivity.class));
+                Snackbar.make(relativeLayout, "Search", Snackbar.LENGTH_SHORT).show();
                 break;
         }
     }

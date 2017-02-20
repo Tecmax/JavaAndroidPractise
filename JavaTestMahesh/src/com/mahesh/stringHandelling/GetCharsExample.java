@@ -11,7 +11,7 @@ public class GetCharsExample {
 		}
 
 		char[] array2 = new char[] { 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a' };
-		str.getChars(10, 16, array2, 2);
+		str.getChars(10, 16, array2, 1);
 		System.out.println("\nSecond Array Content:");
 		for (char temp : array2) {
 			System.out.print(temp);

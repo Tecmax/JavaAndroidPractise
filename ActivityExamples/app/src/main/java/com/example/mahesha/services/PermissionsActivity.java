@@ -54,25 +54,25 @@ public class PermissionsActivity extends AppCompatActivity {
                 .build();
     }
 
-    public void ask(View v){
-        switch (v.getId()){
+    public void ask(View v) {
+        switch (v.getId()) {
             case R.id.location:
-                askForPermission(Manifest.permission.ACCESS_FINE_LOCATION,LOCATION);
+                askForPermission(Manifest.permission.ACCESS_FINE_LOCATION, LOCATION);
                 break;
             case R.id.call:
-                askForPermission(Manifest.permission.CALL_PHONE,CALL);
+                askForPermission(Manifest.permission.CALL_PHONE, CALL);
                 break;
             case R.id.write:
-                askForPermission(Manifest.permission.WRITE_EXTERNAL_STORAGE,WRITE_EXST);
+                askForPermission(Manifest.permission.WRITE_EXTERNAL_STORAGE, WRITE_EXST);
                 break;
             case R.id.read:
-                askForPermission(Manifest.permission.READ_EXTERNAL_STORAGE,READ_EXST);
+                askForPermission(Manifest.permission.READ_EXTERNAL_STORAGE, READ_EXST);
                 break;
             case R.id.camera:
-                askForPermission(Manifest.permission.CAMERA,CAMERA);
+                askForPermission(Manifest.permission.CAMERA, CAMERA);
                 break;
             case R.id.accounts:
-                askForPermission(Manifest.permission.GET_ACCOUNTS,ACCOUNTS);
+                askForPermission(Manifest.permission.GET_ACCOUNTS, ACCOUNTS);
                 break;
             default:
                 break;
@@ -101,7 +101,7 @@ public class PermissionsActivity extends AppCompatActivity {
     @Override
     public void onRequestPermissionsResult(int requestCode, String[] permissions, int[] grantResults) {
         super.onRequestPermissionsResult(requestCode, permissions, grantResults);
-        if(ActivityCompat.checkSelfPermission(this, permissions[0]) == PackageManager.PERMISSION_GRANTED){
+        if (ActivityCompat.checkSelfPermission(this, permissions[0]) == PackageManager.PERMISSION_GRANTED) {
             switch (requestCode) {
                 //Location
                 case 1:
@@ -134,14 +134,14 @@ public class PermissionsActivity extends AppCompatActivity {
                 case 6:
                     AccountManager manager = (AccountManager) getSystemService(ACCOUNT_SERVICE);
                     Account[] list = manager.getAccounts();
-                    Toast.makeText(this,""+list[0].name,Toast.LENGTH_SHORT).show();
-                    for(int i=0; i<list.length;i++){
-                        Log.e("Account "+i,""+list[i].name);
+                    Toast.makeText(this, "" + list[0].name, Toast.LENGTH_SHORT).show();
+                    for (int i = 0; i < list.length; i++) {
+                        Log.e("Account " + i, "" + list[i].name);
                     }
             }
 
             Toast.makeText(this, "Permission granted", Toast.LENGTH_SHORT).show();
-        }else{
+        } else {
             Toast.makeText(this, "Permission denied", Toast.LENGTH_SHORT).show();
         }
 
@@ -159,7 +159,7 @@ public class PermissionsActivity extends AppCompatActivity {
         client.disconnect();
     }
 
-    private void askForGPS(){
+    private void askForGPS() {
         mLocationRequest = LocationRequest.create();
         mLocationRequest.setPriority(LocationRequest.PRIORITY_HIGH_ACCURACY);
         LocationSettingsRequest.Builder builder = new LocationSettingsRequest.Builder().addLocationRequest(mLocationRequest);

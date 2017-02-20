@@ -21,7 +21,7 @@
                 android:id="@+id/button"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Button Example"
+                android:text="@string/buttons_example"
                 android:typeface="sans" />
 
             <Button
@@ -109,6 +109,11 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Canvas Example" />
+            <Button
+                android:id="@+id/search_example"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Search Example" />
 
             <LinearLayout
                 android:layout_width="match_parent"

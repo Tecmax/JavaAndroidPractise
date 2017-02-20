@@ -9,31 +9,33 @@ import android.view.View;
 import android.widget.Toast;
 
 import com.example.mahesha.activityexamples.R;
+import com.example.mahesha.utility.Constants;
 
 public class FragmentTestActivity extends AppCompatActivity {
 
     private static final String TAG = FragmentTestActivity.class.getSimpleName();
 
     private FragmentManager manager;
-   @Override
+
+    @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_fragment_test);
-       manager = getFragmentManager();
+        manager = getFragmentManager();
     }
 
     public void addFragmentA(View view) {
-        Log.d(TAG, "addFragmentA: "+"adding");
+        Log.d(TAG, "addFragmentA: " + "adding");
         FragmentA fragmentA = new FragmentA();
 
         FragmentTransaction transaction = manager.beginTransaction();
-        transaction.add(R.id.container, fragmentA, "fragA");
+        transaction.add(R.id.container, fragmentA, Constants.FragmentA);
         transaction.commit();
     }
 
     public void removeFragmentA(View view) {
 
-        FragmentA fragmentA = (FragmentA) manager.findFragmentByTag("fragA");
+        FragmentA fragmentA = (FragmentA) manager.findFragmentByTag(Constants.FragmentA);
         FragmentTransaction transaction = manager.beginTransaction();
 
         if (fragmentA != null) {
@@ -49,13 +51,13 @@ public class FragmentTestActivity extends AppCompatActivity {
         FragmentB fragmentB = new FragmentB();
 
         FragmentTransaction transaction = manager.beginTransaction();
-        transaction.add(R.id.container, fragmentB, "fragB");
+        transaction.add(R.id.container, fragmentB, Constants.FragmentB);
         transaction.commit();
     }
 
     public void removeFragmentB(View view) {
 
-        FragmentB fragmentB = (FragmentB) manager.findFragmentByTag("fragB");
+        FragmentB fragmentB = (FragmentB) manager.findFragmentByTag(Constants.FragmentB);
         FragmentTransaction transaction = manager.beginTransaction();
 
         if (fragmentB != null) {
@@ -70,7 +72,7 @@ public class FragmentTestActivity extends AppCompatActivity {
 
         FragmentA fragmentA = new FragmentA();
         FragmentTransaction transaction = manager.beginTransaction();
-        transaction.replace(R.id.container, fragmentA, "fragA");
+        transaction.replace(R.id.container, fragmentA, Constants.FragmentA);
         transaction.commit();
     }
 
@@ -78,13 +80,13 @@ public class FragmentTestActivity extends AppCompatActivity {
 
         FragmentB fragmentB = new FragmentB();
         FragmentTransaction transaction = manager.beginTransaction();
-        transaction.replace(R.id.container, fragmentB, "fragB");
+        transaction.replace(R.id.container, fragmentB, Constants.FragmentB);
         transaction.commit();
     }
 
     public void attachFragmentA(View view) {
 
-        FragmentA fragmentA = (FragmentA) manager.findFragmentByTag("fragA");
+        FragmentA fragmentA = (FragmentA) manager.findFragmentByTag(Constants.FragmentA);
         FragmentTransaction transaction = manager.beginTransaction();
 
 
@@ -98,7 +100,7 @@ public class FragmentTestActivity extends AppCompatActivity {
 
     public void detachFragmentA(View view) {
 
-        FragmentA fragmentA = (FragmentA) manager.findFragmentByTag("fragA");
+        FragmentA fragmentA = (FragmentA) manager.findFragmentByTag(Constants.FragmentA);
         FragmentTransaction transaction = manager.beginTransaction();
 
         if (fragmentA != null) {
@@ -111,7 +113,7 @@ public class FragmentTestActivity extends AppCompatActivity {
 
     public void showFragmentA(View view) {
 
-        FragmentA fragmentA = (FragmentA) manager.findFragmentByTag("fragA");
+        FragmentA fragmentA = (FragmentA) manager.findFragmentByTag(Constants.FragmentA);
         FragmentTransaction transaction = manager.beginTransaction();
 
         if (fragmentA != null) {
@@ -124,7 +126,7 @@ public class FragmentTestActivity extends AppCompatActivity {
 
     public void hideFragmentA(View view) {
 
-        FragmentA fragmentA = (FragmentA) manager.findFragmentByTag("fragA");
+        FragmentA fragmentA = (FragmentA) manager.findFragmentByTag(Constants.FragmentA);
         FragmentTransaction transaction = manager.beginTransaction();
 
         if (fragmentA != null) {

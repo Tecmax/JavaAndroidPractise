@@ -2,7 +2,7 @@ package com.mahesh.stringHandelling;
 
 public class CopyValueOfExample {
 	public static void main(String args[]) {
-		char[] data = { 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k' };
+		char[] data = { '1', '2', 'c', 'd', 'e', 'f', '5', 'h', 'i', 'j', 'k' };
 		String str1 = "Text";
 		String str2 = "String";
 		// Variation 1:String copyValueOf(char[] data)

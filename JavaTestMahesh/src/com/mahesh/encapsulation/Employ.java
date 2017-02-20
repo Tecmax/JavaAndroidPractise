@@ -11,6 +11,14 @@ public class Employ {
 	private int empMobileNo;
 	private String StudentN;
 	private int StudentId;
+	public int getStudentId() {
+		return StudentId;
+	}
+
+	public void setStudentId(int studentId) {
+		StudentId = studentId;
+	}
+
 	private String StudentAdd;
 
 	public String getStudentN() {

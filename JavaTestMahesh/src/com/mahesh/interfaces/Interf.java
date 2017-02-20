@@ -1,4 +1,8 @@
+
 package com.mahesh.interfaces;
+
+
+import com.mahesh.abstraction.FourWheeler;
 
 interface MyInterface {
 	abstract void method1();
@@ -11,7 +15,7 @@ interface MyInterface1 extends MyInterface{
 	public void method4();
 }
 
-class Interf implements MyInterface,MyInterface1 {
+class Interf  extends FourWheeler implements MyInterface,MyInterface1 {
 
 	public static void main(String arg[]) {
 		System.out.println("inside mainmethod");

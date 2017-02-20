@@ -38,7 +38,9 @@ public class ArrayListEx {
 				+ "\n" + numberofitems);
 		boolean adc = obj.contains("Steve");
 		System.out.println("Current bool array list is:" + adc);
-
+		for (int i = 0; i < obj.size(); i++) {
+			System.out.println(obj.get(i).toString());
+		}
 		/* Remove element from the given index */
 		obj.remove(1);
 		obj.clear();

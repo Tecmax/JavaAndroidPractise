@@ -7,4 +7,5 @@
     <string name="login">connexion</string>
     <string name="signup">Ne pas avoir un compte? signer</string>
     <string name="title_activity_launcher">Lanceur Activite</string>
+    <string name="action_add_item"></string>
 </resources>

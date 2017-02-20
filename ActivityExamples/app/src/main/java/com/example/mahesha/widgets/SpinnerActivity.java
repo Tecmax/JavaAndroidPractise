@@ -76,9 +76,9 @@ public class SpinnerActivity extends AppCompatActivity implements AdapterView.On
         categories.add("Travel");
 
         // Creating adapter for spinner
-        ArrayAdapter<String> dataAdapter = new ArrayAdapter <String>(this, android.R.layout.simple_spinner_item, list);
+        ArrayAdapter<String> dataAdapter = new ArrayAdapter <String>(this, android.R.layout.simple_selectable_list_item, categories);
         // Drop down layout style - list view with radio button
-        dataAdapter.setDropDownViewResource(android.R.layout.simple_spinner_item);
+        dataAdapter.setDropDownViewResource(android.R.layout.select_dialog_multichoice);
         // attaching data adapter to spinner
         spinner.setAdapter(dataAdapter);
 
@@ -143,6 +143,7 @@ public class SpinnerActivity extends AppCompatActivity implements AdapterView.On
 
     @Override
     public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+
         String item = parent.getItemAtPosition(position).toString();
         Toast.makeText(parent.getContext(), "Selected: " + item, Toast.LENGTH_SHORT).show();
     }

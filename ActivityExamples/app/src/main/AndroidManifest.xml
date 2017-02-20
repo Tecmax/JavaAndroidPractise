@@ -243,10 +243,37 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".LanguageActivity"
-            android:theme="@style/AppTheme.NoActionBar"/>
-        <activity android:name="com.example.mahesha.networkRV.FullImageActivity"/>
-        <activity android:name="com.example.mahesha.networkRV.AndroidGridLayoutActivity"/>
+        <activity
+            android:name=".LanguageActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name="com.example.mahesha.networkRV.FullImageActivity" />
+        <activity android:name="com.example.mahesha.networkRV.AndroidGridLayoutActivity" />
+        <activity
+            android:name="com.example.mahesha.searchimp.SearchCountryActivity"
+            android:label="@string/app_name"
+            android:theme="@style/DarkActionBar">
+            <meta-data
+                android:name="android.app.default_searchable"
+                android:value=".SearchableActivity" />
+        </activity>
+        <activity
+            android:name="com.example.mahesha.searchimp.SearchableActivity"
+            android:theme="@style/DarkActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH" />
+            </intent-filter>
+            <meta-data
+                android:name="android.app.searchable"
+                android:resource="@xml/searchable" />
+        </activity>
+        <activity
+            android:name="com.example.mahesha.searchimp.CountryActivity"
+            android:theme="@style/DarkActionBar" />
+
+        <provider
+            android:name="com.example.mahesha.searchimp.CountryContentProvider"
+            android:authorities="com.example.mahesha.CountryContentProvider"
+            android:exported="true" />
     </application>
 
 </manifest>

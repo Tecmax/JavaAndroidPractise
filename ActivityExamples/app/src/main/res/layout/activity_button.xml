@@ -20,8 +20,8 @@
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:onClick="open"
         android:layout_below="@+id/simpleDigitalClock"
+        android:onClick="open"
         android:text="Alert Dialog" />
 
     <DigitalClock
@@ -46,16 +46,33 @@
         android:textSize="25sp"
         android:textStyle="bold" />
 
+    <Button
+        android:id="@+id/bt_tv"
+        android:layout_above="@+id/tv_exap"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="change Hello" />
+
+    <TextView
+        android:id="@+id/tv_exap"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/latitude"
+        android:gravity="center"
+        android:text="Hello"
+        android:textSize="20sp" />
+
     <TextView
         android:id="@+id/latitude"
-        android:text="lat"
-        android:layout_above="@+id/longitude"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/longitude"
+        android:text="lat" />
+
     <TextView
         android:id="@+id/longitude"
         android:layout_width="match_parent"
-        android:text="long"
+        android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:layout_height="wrap_content" />
+        android:text="long" />
 </RelativeLayout>

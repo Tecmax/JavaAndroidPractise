@@ -13,9 +13,10 @@ public class ExceptionChecked {
 		FileInputStream fis = null;
 		try {
 			fis = new FileInputStream("C:/Softgen/mahesh.txt");
-		} catch (FileNotFoundException fnfe) {
+		} catch (FileNotFoundException y) {
 			System.out.println("The specified file is not "
-					+ "present at the given path" +fnfe);
+					+ "present at the given path " +y);
+//			y.printStackTrace();
 		}
 		int k;
 		try {

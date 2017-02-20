@@ -31,8 +31,9 @@ public class MenusActivity extends AppCompatActivity {
                 //registering popup with OnMenuItemClickListener
                 popup.setOnMenuItemClickListener(new PopupMenu.OnMenuItemClickListener() {
                     public boolean onMenuItemClick(MenuItem item) {
-                        Toast.makeText(MenusActivity.this,"You Clicked : " + item.getTitle(),Toast.LENGTH_SHORT).show();
-                        return true;
+//                        Toast.makeText(MenusActivity.this,"You Clicked : " + item.getTitle(),Toast.LENGTH_SHORT).show();
+                        return selcet(item);
+//                        return true;
                     }
                 });
 
@@ -45,13 +46,15 @@ public class MenusActivity extends AppCompatActivity {
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
         new MenuInflater(getApplication()).inflate(R.menu.menu_login, menu);
+        MenuItem item = menu.findItem(R.id.item2);
+        item.setVisible(false);
 //        getMenuInflater().inflate(R.menu.menu_login, menu);//Menu Resource, Menu
         return true;
     }
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-        switch (item.getItemId()) {
+        /*switch (item.getItemId()) {
             case R.id.item1:
                 Toast.makeText(getApplicationContext(), "Item 1 Selected", Toast.LENGTH_LONG).show();
                 return true;
@@ -66,6 +69,24 @@ public class MenusActivity extends AppCompatActivity {
                 return true;
             default:
                 return super.onOptionsItemSelected(item);
+        }*/
+        return selcet(item);
+    }
+    boolean selcet(MenuItem item){
+        switch (item.getItemId()) {
+            case R.id.item1:
+                Toast.makeText(getApplicationContext(), "Item 1 Selected", Toast.LENGTH_LONG).show();
+                return true;
+            case R.id.item2:
+                Toast.makeText(getApplicationContext(), "Item 2 Selected", Toast.LENGTH_LONG).show();
+                return true;
+            case R.id.item3:
+                Toast.makeText(getApplicationContext(), "Item 3 Selected", Toast.LENGTH_LONG).show();
+                return true;
+            case R.id.call:
+                Toast.makeText(getApplicationContext(), "Call Selected", Toast.LENGTH_LONG).show();
+                return true;
         }
+        return false;
     }
 }

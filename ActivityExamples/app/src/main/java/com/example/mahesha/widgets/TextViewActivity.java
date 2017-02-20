@@ -22,10 +22,24 @@ import static com.example.mahesha.utility.Utils.loadJSONFromAsset;
 public class TextViewActivity extends AppCompatActivity {
     TextInputLayout tilReferredBy;
     InstantAutoCompleteTextView atvReferredBy;
+    String UserName, Password;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_text_view);
+//        final TextInputEditText userName = (TextInputEditText) findViewById(R.id.et_username);
+//        final TextInputEditText password = (TextInputEditText) findViewById(R.id.et_password);
+//
+//        Button login = (Button) findViewById(R.id.bt_login);
+//        login.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                UserName = userName.getText().toString();
+//                Password = password.getText().toString();
+//                Toast.makeText(TextViewActivity.this, "UserName Is " + UserName + "\n" + "Password is " + Password, Toast.LENGTH_SHORT).show();
+//            }
+//        });
         tilReferredBy = (TextInputLayout) findViewById(R.id.til_referred_by);
         atvReferredBy = (InstantAutoCompleteTextView) findViewById(R.id.atv_referred_by);
         atvReferredBy.setThreshold(2);
@@ -36,7 +50,7 @@ public class TextViewActivity extends AppCompatActivity {
             JSONArray jsonArray = obj.getJSONArray("services");
             if (jsonArray != null) {
                 int len = jsonArray.length();
-                for (int i=0;i<len;i++){
+                for (int i = 0; i < len; i++) {
                     list.add(jsonArray.get(i).toString());
                 }
             }

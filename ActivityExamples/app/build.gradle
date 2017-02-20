@@ -81,7 +81,7 @@ dependencies {
     androidTestCompile "com.google.dexmaker:dexmaker-mockito:1.2"
     compile 'com.google.android.gms:play-services-appindexing:9.2.1'
     compile 'com.google.android.gms:play-services-location:9.2.1'
-    compile('com.crashlytics.sdk.android:crashlytics:2.6.5@aar') {
+    compile('com.crashlytics.sdk.android:crashlytics:2.6.6@aar') {
         transitive = true;
     }
 }

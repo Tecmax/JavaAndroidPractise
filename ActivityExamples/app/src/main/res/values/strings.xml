@@ -56,12 +56,17 @@
     <!-- Server Client ID.  This should be a valid Web OAuth 2.0 Client ID obtained
          from https://console.developers.google.com/ -->
     <string name="server_client_id">29119297558-g90ig8q0jcv88ldrh5vfv0qopfmnsk7a.apps.googleusercontent.com</string>
+    <string name="search">Search Country</string>
+    <string name="search_hint">Search names</string>
+    <string name="flag_description">Country Flag</string>
+    <string name="search_settings">Search Country Names</string>
 
 
     <!--CheckBox activity-->
     <string name="cb_meats">Meats</string>
     <string name="cb_cheese">Cheese</string>
     <string name="cb_sandwich">Sandwich</string>
+    <string name="buttons_example">Button Example</string>
 
 
     <string name="title_crossfade">Simple Crossfade</string>

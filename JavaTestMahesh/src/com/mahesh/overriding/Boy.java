@@ -32,9 +32,9 @@ class Boy extends Human {
 	}
 
 	public static void main(String args[]) {
-		Boy obj = new Boy();
+		Human obj = new Boy();
 		obj.eat();
-		obj.run();
+//		obj.run();
 		obj.walk();
 		obj.jog();
 

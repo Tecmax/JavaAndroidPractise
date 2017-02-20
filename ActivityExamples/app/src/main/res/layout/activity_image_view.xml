@@ -13,15 +13,15 @@
 
     <ImageView
         android:id="@+id/imageView1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/iv_Std_size"
         android:src="@drawable/thumb1" />
 
     <com.mikhaellopez.circularimageview.CircularImageView
         android:id="@+id/circle_image"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:layout_toRightOf="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:layout_below="@+id/imageView1"
         android:src="@drawable/thumb1"
         app:civ_border_color="#EEEEEE"
         app:civ_border_width="4dp"
@@ -33,6 +33,6 @@
         android:id="@+id/btnChangeImage"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/imageView1"
+        android:layout_below="@id/circle_image"
         android:text="Change Image" />
 </RelativeLayout>

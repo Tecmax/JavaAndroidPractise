@@ -15,6 +15,7 @@ import com.example.mahesha.fragmentexamples.FragmentTestActivity;
 import com.example.mahesha.layoutsexample.LinearActivity;
 import com.example.mahesha.layoutsexample.RelativeExampleActivity;
 import com.example.mahesha.maps.MapsActivity;
+import com.example.mahesha.model.ProfileMaster;
 import com.example.mahesha.networkRV.AndroidGridLayoutActivity;
 import com.example.mahesha.notificatons.EffectiveNavagationActivity;
 import com.example.mahesha.notificatons.NotificaionActivity;
@@ -37,6 +38,15 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         Button fragments= (Button) findViewById(R.id.bt_fragments);
         Button maps= (Button) findViewById(R.id.bt_maps);
         Button widgets= (Button) findViewById(R.id.bt_widgets);
+        ProfileMaster obj = new ProfileMaster();
+        obj.setUsername("Mahesh");
+        obj.setMobile("8114446564");
+        obj.setEmail("Mahesh@nals");
+        obj.setCity("Bangalore");
+        obj.setState("Ktaka");
+        obj.setArea("Bang");
+        obj.setPassword("Mahesh30");
+//        db.createProfileUser(obj);
         fragments.setOnClickListener(this);
         maps.setOnClickListener(this);
         widgets.setOnClickListener(this);
@@ -57,40 +67,40 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     protected void onRestart() {
         super.onRestart();
         Log.e("MainActivity","on restart");
-        Toast.makeText(this, "onRestart", Toast.LENGTH_SHORT).show();
+//        Toast.makeText(this, "onRestart", Toast.LENGTH_SHORT).show();
     }
 
     @Override
     protected void onStart() {
         super.onStart();
-        Toast.makeText(this, "onStart", Toast.LENGTH_SHORT).show();
+//        Toast.makeText(this, "onStart", Toast.LENGTH_SHORT).show();
     }
 
     @Override
     protected void onResume() {
         super.onResume();
-        Toast.makeText(this, "onResume", Toast.LENGTH_SHORT).show();
+//        Toast.makeText(this, "onResume", Toast.LENGTH_SHORT).show();
         // The activity has become visible (it is now "resumed").
     }
 
     @Override
     protected void onPause() {
         super.onPause();
-        Toast.makeText(this, "onPause", Toast.LENGTH_SHORT).show();
+//        Toast.makeText(this, "onPause", Toast.LENGTH_SHORT).show();
         // Another activity is taking focus (this activity is about to be "paused").
     }
 
     @Override
     protected void onStop() {
         super.onStop();
-        Toast.makeText(this, "onStop", Toast.LENGTH_SHORT).show();
+//        Toast.makeText(this, "onStop", Toast.LENGTH_SHORT).show();
         // The activity is no longer visible (it is now "stopped")
     }
 
     @Override
     protected void onDestroy() {
         super.onDestroy();
-        Toast.makeText(this, "onDestroy", Toast.LENGTH_SHORT).show();
+//        Toast.makeText(this, "onDestroy", Toast.LENGTH_SHORT).show();
         // The activity is about to be destroyed.
     }
 

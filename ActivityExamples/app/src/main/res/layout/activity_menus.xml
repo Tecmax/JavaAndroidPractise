@@ -14,5 +14,6 @@
         android:id="@+id/bt_popup"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
         android:text="Pop Menu" />
 </RelativeLayout>

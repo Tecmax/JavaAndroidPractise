@@ -16,7 +16,7 @@ abstract class AbstractVehicle {
 	}
 }
 
-class FourWheeler extends AbstractVehicle {
+public class FourWheeler extends AbstractVehicle {
 	public void engine() {
 		System.out.println("i am in main engine");
 	}
@@ -29,7 +29,7 @@ class FourWheeler extends AbstractVehicle {
 
 	public static void main(String[] args) {
 		System.out.println("main method");
-		FourWheeler dsds = new FourWheeler();
+		AbstractVehicle dsds = new FourWheeler();
 		dsds.color();
 		dsds.speed();
 		dsds.engine();

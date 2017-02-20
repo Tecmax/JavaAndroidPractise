@@ -66,7 +66,7 @@ public class RecyclerActivity extends AppCompatActivity {
                         "ENGLISH"};
 
         RecyclerView.Adapter recyclerViewAdapter = new RecyclerViewAdapter(this, subjects);
-        recyclerView.setAdapter(recyclerViewAdapter);
+        recyclerView.setAdapter(adapter);
     }
 
     @Override

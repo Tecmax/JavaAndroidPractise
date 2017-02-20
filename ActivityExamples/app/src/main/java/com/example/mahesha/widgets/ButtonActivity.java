@@ -21,6 +21,7 @@ import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.AnalogClock;
+import android.widget.Button;
 import android.widget.DigitalClock;
 import android.widget.TextClock;
 import android.widget.TextView;
@@ -125,6 +126,8 @@ public class ButtonActivity extends AppCompatActivity implements LocationListene
         clk = (AnalogClock) findViewById(R.id.analogClock1);
         tvlatitude = (TextView) findViewById(R.id.latitude);
         tvlongitude = (TextView) findViewById(R.id.longitude);
+        final TextView tvexa = (TextView) findViewById(R.id.tv_exap);
+        Button dyn_tv = (Button) findViewById(R.id.bt_tv);
         DigitalClock dc = (DigitalClock) findViewById(R.id.digitalClock1);
         TextClock tc = (TextClock) findViewById(R.id.simpleDigitalClock);
         geocoder = new Geocoder(this, Locale.getDefault());
@@ -137,6 +140,13 @@ public class ButtonActivity extends AppCompatActivity implements LocationListene
                 Toast.makeText(getBaseContext(), "This is Static AnalogClock",
                         Toast.LENGTH_SHORT).show();
                 download(v);
+            }
+        });
+        dyn_tv.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View v) {
+               tvexa.setText("Mahesh");
             }
         });
 
@@ -170,6 +180,7 @@ public class ButtonActivity extends AppCompatActivity implements LocationListene
     public void open(View view) {
         AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(this);
         alertDialogBuilder.setMessage("Are you sure You wanted to make decision");
+        alertDialogBuilder.setTitle("HGellop");
         alertDialogBuilder.setPositiveButton("yes",
                 new DialogInterface.OnClickListener() {
                     @Override
@@ -206,7 +217,7 @@ public class ButtonActivity extends AppCompatActivity implements LocationListene
     public void download(View view) {
         progress = new ProgressDialog(this);
         progress.setMessage("Downloading Music");
-        progress.setProgressStyle(ProgressDialog.STYLE_HORIZONTAL);
+        progress.setProgressStyle(ProgressDialog.STYLE_SPINNER);
         progress.setIndeterminate(false);
         progress.setTitle("Hello Mahesh");
         progress.setCancelable(false);

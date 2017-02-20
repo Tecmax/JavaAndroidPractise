@@ -20,6 +20,8 @@ public class SeekbarActivity extends AppCompatActivity {
             @Override
             public void onProgressChanged(SeekBar seekBar, int i, boolean b) {
                 progressChangedValue = i;
+                Toast.makeText(SeekbarActivity.this, "Seek Bar Progress is : " + progressChangedValue, Toast.LENGTH_SHORT).show();
+
             }
 
             @Override

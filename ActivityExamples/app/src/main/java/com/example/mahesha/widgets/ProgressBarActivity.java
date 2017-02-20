@@ -23,7 +23,7 @@ public class ProgressBarActivity extends AppCompatActivity {
         // Start long running operation in a background thread
         new Thread(new Runnable() {
             public void run() {
-                while (progressStatus < 100) {
+                while (progressStatus < progressBar.getMax()) {
                     progressStatus += 1;
                     // Update the progress bar and display the
                     //current value in the text view

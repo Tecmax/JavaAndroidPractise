@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<session version="1.0">
-<refactoring comment="Rename type &apos;MethodOverloading.MOTest&apos; to &apos;Employ&apos;&#x0D;&#x0A;- Original project: &apos;SoftGen&apos;&#x0D;&#x0A;- Original element: &apos;MethodOverloading.MOTest&apos;&#x0D;&#x0A;- Renamed element: &apos;MethodOverloading.Employ&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;MOTest&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;MethodOverloading{MOTest.java[MOTest" matchStrategy="1" name="Employ" qualified="false" references="true" similarDeclarations="false" stamp="1463417649481" textual="false" version="1.0"/>
-</session>

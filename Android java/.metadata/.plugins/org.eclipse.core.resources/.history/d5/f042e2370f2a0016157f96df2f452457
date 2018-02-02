@@ -1,9 +1,0 @@
-package Examples;
-
-public class C11 {
-	public static String main(String[] args) {
-		System.out.println("hello...!!!");
-		return null;
-		
-	}
-}

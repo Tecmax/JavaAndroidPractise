@@ -1,9 +1,0 @@
-<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <string name="app_name">భాష</string>
-    <string name="welcome">స్వాగత</string>
-    <string name="email">ఇమెయిల్</string>
-    <string name="password">పాస్వర్డ్</string>
-    <string name="login">లాగిన్</string>
-    <string name="signup">ఖాతా చేయడంలో? సృష్టించడానికి</string>
-    <string name="title_activity_launcher">లాంచర్ కార్యాచరణ</string>
-</resources>

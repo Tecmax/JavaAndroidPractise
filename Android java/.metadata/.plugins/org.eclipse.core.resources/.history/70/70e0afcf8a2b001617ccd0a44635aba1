@@ -1,8 +1,0 @@
-package Examples;
-
-public class String {
-	public static String main(String[] args) {
-		System.out.println("hello...!!!");
-		return null;		
-	}
-}

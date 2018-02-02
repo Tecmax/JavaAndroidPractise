@@ -1,0 +1,15 @@
+package MethodOverloading;
+
+public class MO1 {
+	public static void disp(char c,int a){
+		
+	System.out.println(c+""+a)	;
+	}
+	public static void disp(int b,char d){
+	System.out.println(d+""+d);
+	}
+}
+}
+public static void main(String[] args){
+	
+}

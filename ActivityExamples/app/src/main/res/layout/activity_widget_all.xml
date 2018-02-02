@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.mahesha.activityexamples.practsie.WidgetAllActivity">
+
+    <CheckBox
+        android:id="@+id/cb_hello"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onTestClicked"
+        android:text="Hello" />
+
+    <CheckBox
+        android:id="@+id/cb_world"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="onTestClicked"
+        android:text="World" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:id="@+id/cb_terms"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onTestClicked" />
+
+        <TextView
+            android:id="@+id/terms"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onTermsClicked"
+            android:text="Terms And Conditions" />
+    </LinearLayout>
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rb_male"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onGenderClicked"
+            android:text="Male" />
+
+        <RadioButton
+            android:id="@+id/rb_female"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onGenderClicked"
+            android:text="Female" />
+    </RadioGroup>
+</LinearLayout>

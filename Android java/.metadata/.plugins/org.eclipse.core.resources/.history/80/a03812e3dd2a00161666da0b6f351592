@@ -1,0 +1,18 @@
+package MethodOverloading;
+
+public class MO1 {
+	public void disp(char c, int a) {
+
+		System.out.println(c + " " + a);
+	}
+
+	public void disp(int b, char d) {
+		System.out.println(b + " " + d);
+	}
+
+	public static void main(String[] args) {
+		MO1 obj = new MO1();
+		obj.disp('d', 5);
+		obj.disp(10, 'e');
+	}
+}

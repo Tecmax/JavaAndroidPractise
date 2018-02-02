@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.mahesha.fragmentexamples.TTFragmentActivity">
+
+    <TextView
+        android:id="@+id/addSignup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add SignUp"
+        android:onClick="addSignUp"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/removeSignup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="removeSignUp"
+        android:layout_alignParentRight="true"
+        android:text="Remove SignUp"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/freg_cont"
+        android:layout_below="@+id/addSignup">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:visibility="gone"
+            android:text="Layout Container"
+            android:gravity="center"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+    </FrameLayout>
+</RelativeLayout>

@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">BasicAppli</string>
+    <string name="mrp">MRP : %1$s</string>
+    <string name="sp">SP : %1$s</string>
+    <string name="title_activity_home">HomeActivity</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_alert">AlertActivity</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_temp">TempActivity</string>
+    <string name="title_activity_whats_app">WhatsAppActivity</string>
+    <string name="title_activity_vegetable">VegetableActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="title_activity_google">Map</string>
+</resources>

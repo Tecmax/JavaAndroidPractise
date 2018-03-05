@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">LocationAddress</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="android_key">AIzaSyBrmsc85IhXg5p7DI_dAir0asVNLpDXy6g</string>
+    <string name="web_api_key">AIzaSyDCvBa6NMlkCYuxav3CUxp4QGESF-Doh9A</string>
+    <string name="web_key">AIzaSyAOKQXuL-mey2OIYQnOgZFknF0J9Abxn3A</string>
+</resources>

@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "172390265560",
+    "firebase_url": "https://tecmaxfcm.firebaseio.com",
+    "project_id": "tecmaxfcm",
+    "storage_bucket": "tecmaxfcm.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:172390265560:android:a9e3dd3041d8b8a9",
+        "android_client_info": {
+          "package_name": "com.example.mahesh.fcmexample"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "172390265560-qi1ciinbrq7amg5u82ler85r4n8uklhs.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBqHvYNN9DuLrb9N8KAbNLqw4wvNK2Th2U"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

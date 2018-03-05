@@ -8,16 +8,14 @@ import java.io.FileWriter;
 import java.io.IOException;
 
 public class ExceptionChecked {
-	public static void main(String args[]) {
-		String content = "Hello Mahesh";
-		String path ="C:/Tecmax/mahesh.txt";
+	public static void main(String args[]){
+		String content = "Hello Harsha";
+		String path = "C:/Tecmax/harsha.txt";
 		FileInputStream fis = null;
 		try {
 			fis = new FileInputStream(path);
-		} catch (FileNotFoundException y) {
-			System.out.println("The specified file is not "
-					+ "present at the given path " +y);
-//			y.printStackTrace();
+		} catch (FileNotFoundException e) {
+			System.out.println("no File Found");
 		}
 		int k;
 		try {
@@ -33,17 +31,21 @@ public class ExceptionChecked {
 			bw.close();
 
 			System.out.println("Done");
-			while ((k = fis.read()) != -1) {
-				System.out.print((char) k);
-			}
-			fis.close();
-		} catch (IOException ioe) {
-			System.out.println("I/O error occurred: " );
-			ioe.printStackTrace();
 			
-		}
-	}
-	private void name() throws FileNotFoundException {
-		FileInputStream fis = new FileInputStream("C:/Softgen/mahesh.txt");
+//			if (fis!=null) {
+				while ((k = fis.read()) != -1) {
+					System.out.print((char) k);
+				}
+				fis.close();
+//			}else {
+//				System.out.println("Reinitilize");
+//			}
+			
+		} catch (IOException ioe) {
+			System.out.println("I/O error occurred: ");
+			ioe.printStackTrace();
+
+		}catch (NullPointerException e) {
+System.out.println("Please Re Initilize");		}
 	}
 }

@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">ActivityLife</string>
+    <string name="fourth">fourth</string>
+    <string name="second">second</string>
+    <string name="first">First</string>
+    <string name="third">third</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

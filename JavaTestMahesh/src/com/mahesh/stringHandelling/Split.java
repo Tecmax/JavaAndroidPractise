@@ -2,7 +2,7 @@ package com.mahesh.stringHandelling;
 
 public class Split {
 	public static void main(String[] args) {
-		String m = new String("i am mahesh");
+		String m = new String("i am sandep");
 		String[] count = m.split(" ");
 		for (int i = 0; i < count.length; i++) {
 			System.out.println(count[i]);

@@ -25,8 +25,7 @@ class ExtendsThread {
 		Count cnt = new Count();
 		try {
 			while (cnt.isAlive()) {
-				System.out
-						.println("Main thread will be alive till the child thread is live");
+				System.out.println("Main thread will be alive " + "till the child thread is live");
 				Thread.sleep(3000);
 			}
 		} catch (InterruptedException e) {

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.tecmax.testaksh.example.WidgetActivity">
+
+    <ImageButton
+        android:id="@+id/ccclock"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/clock_activi"
+        android:onClick="goToClock"
+        android:src="@drawable/ic_stat_clock" />
+
+    <ImageButton
+        android:id="@+id/fb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/ccclock"
+        android:contentDescription="Clock Activity"
+        android:onClick="goToClock"
+        android:src="@drawable/ic_facebook" />
+
+    <ImageButton
+        android:id="@+id/rc"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_toEndOf="@+id/fb"
+        android:scaleType="fitXY"
+        android:contentDescription="Recycler View"
+        android:onClick="goToClock"
+        android:src="@drawable/social" />
+
+
+    <TextView
+        android:id="@+id/abs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ccclock"
+        android:layout_marginTop="10dp"
+        android:text="ACSS" />
+
+    <TextView
+        android:id="@+id/absx"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_below="@+id/ccclock"
+        android:typeface="serif"
+        android:textStyle="italic"
+        android:layout_marginTop="10dp"
+        android:textSize="20sp"
+        android:layout_toRightOf="@+id/abs"
+        android:text="Tecmax" />
+</RelativeLayout>

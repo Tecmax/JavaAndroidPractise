@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.tecmax.testaksh.example.LinearExActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/basicAct"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Basic Activity" />
+
+        <Button
+            android:id="@+id/bottomNavagation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Bottom Navagation" />
+
+        <Button
+            android:id="@+id/fullScreen"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Full Screen" />
+
+        <Button
+            android:id="@+id/master"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Master Detail" />
+
+        <Button
+            android:id="@+id/loginAct"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Login Activity" />
+
+        <Button
+            android:id="@+id/navAct"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Navagation Activity" />
+
+        <Button
+            android:id="@+id/scrollingAct"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Scrolling Activity" />
+
+        <Button
+            android:id="@+id/settingsAct"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Settings Activity" />
+
+        <Button
+            android:id="@+id/tabAct"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tabbed Activity" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:weightSum="1"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:text="cancel" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:text="Login" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

@@ -4,9 +4,14 @@ public class Finally {
 	public static int myMethod() {
 		try {
 			// try block
-			System.out.println("Inside TRy block");
+			System.out.println("Inside Try block");
+			String a=null;
+			System.out.println(a.length());
 			return 750;
-		} finally {
+		} catch (NullPointerException e) {
+			System.out.println("Inside catch block");
+			return 82;
+		}finally {
 			// finally
 			System.out.println("Inside Finally block");
 			return 30;

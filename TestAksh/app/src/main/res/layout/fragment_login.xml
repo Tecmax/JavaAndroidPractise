@@ -10,16 +10,23 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="username" />
+
     <EditText
         android:id="@+id/pa"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Password" />
 
-    <Button
+    <CheckBox
+        android:id="@+id/rem"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:onClick="validation"
-        android:text="Login"/>
+        android:text="Remember Me" />
+
+    <Button
+        android:id="@+id/lvv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Login" />
 
 </LinearLayout>

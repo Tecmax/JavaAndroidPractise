@@ -26,13 +26,7 @@
         <activity
             android:name=".example.TecmaxLauncherActivity"
             android:configChanges="orientation|keyboardHidden|screenSize"
-            android:theme="@style/FullscreenTheme">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
+            android:theme="@style/FullscreenTheme"/>
         <activity android:name=".example.LinearExActivity" />
         <activity
             android:name=".default_templets.BasicActivity"
@@ -84,7 +78,14 @@
         <activity
             android:name=".example.WhatsTabActivity"
             android:label="@string/title_activity_whats_tab"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".LauncherActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
     </application>
 
 </manifest>

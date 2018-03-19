@@ -16,11 +16,14 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.DividerItemDecoration;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.util.Log;
 import android.view.View;
 import android.widget.TextView;
 import android.widget.Toast;
 
 import java.util.ArrayList;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 public class MainActivity extends AppCompatActivity {
     private RecyclerView recyclerView;
@@ -30,6 +33,7 @@ public class MainActivity extends AppCompatActivity {
     private RecycleAdapter recycleAdapter;
     private BroadcastReceiver broadcastReceiver;
     private static final int REQUEST_CODE_READ_PHONE_STATE = 1;
+    private static final String OTP_REGEX = "[0-9]{1,6}";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -39,7 +43,7 @@ public class MainActivity extends AppCompatActivity {
         recyclerView = (RecyclerView) findViewById(R.id.listRecycle);
         alertText = (TextView) findViewById(R.id.alertText);
         layoutManager = new LinearLayoutManager(this);
-        recyclerView.addItemDecoration(new DividerItemDecoration(this,DividerItemDecoration.VERTICAL));
+        recyclerView.addItemDecoration(new DividerItemDecoration(this, DividerItemDecoration.VERTICAL));
         recyclerView.setLayoutManager(layoutManager);
         recyclerView.setHasFixedSize(true);
         recycleAdapter = new RecycleAdapter(arrayList);
@@ -51,6 +55,32 @@ public class MainActivity extends AppCompatActivity {
                 readFromDb();
             }
         };
+        getMessages();
+    }
+
+    private void getMessages() {
+        SMSReceiver.bindListener(new SmsListener() {
+            @Override
+            public void messageReceived(String messageText) {
+
+                //From the received text string you may do string operations to get the required OTP
+                //It depends on your SMS format
+                Log.e("Message", messageText);
+                Toast.makeText(MainActivity.this, "Message: " + messageText, Toast.LENGTH_LONG).show();
+
+                // If your OTP is six digits number, you may use the below code
+
+                Pattern pattern = Pattern.compile(OTP_REGEX);
+                Matcher matcher = pattern.matcher(messageText);
+                String otp="";
+                while (matcher.find()) {
+                    otp = matcher.group();
+                }
+
+                Toast.makeText(MainActivity.this, "OTP: " + otp, Toast.LENGTH_LONG).show();
+
+            }
+        });
     }
 
     private void readFromDb() {

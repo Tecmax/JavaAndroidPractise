@@ -3,6 +3,7 @@ package com.mahesh.Collections;
 import java.util.ArrayList;
 import java.util.Collections;
 
+
 public class ArrayListOfInteger {
 	public static void main(String args[]) {
 		ArrayList<Integer> arraylist = new ArrayList<Integer>();

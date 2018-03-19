@@ -43,10 +43,9 @@ public class LoginFragment extends Fragment {
             }
         });
         manager = new PrefManager(getActivity());
-
+        rem.setChecked(manager.isRememberMe());
         if (manager.isRememberMe()) {
             un.setText(manager.getUserName());
-            rem.setChecked(true);
         }
         return v;
     }

@@ -32,6 +32,7 @@ public class PrefManager {
     }
 
     public boolean isRememberMe() {
+
         return pref.getBoolean(IS_FIRST_TIME_LAUNCH, true);
     }
 

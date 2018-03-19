@@ -20,7 +20,7 @@ public class ChromeActivity extends AppCompatActivity {
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         web = findViewById(R.id.website);
         String webSiteName = getIntent().getStringExtra("webDetails");
-        web.setWebViewClient(new MyBrowser());
+        web.setWebViewClient(new WebViewClient());
         web.getSettings().setLoadsImagesAutomatically(true);
         web.getSettings().setJavaScriptEnabled(true);
         web.setScrollBarStyle(View.SCROLLBARS_INSIDE_OVERLAY);
@@ -42,6 +42,7 @@ public class ChromeActivity extends AppCompatActivity {
 
         @Override
         public void onPageFinished(WebView view, String url) {
+
             super.onPageFinished(view, url);
         }
     }
@@ -62,7 +63,7 @@ public class ChromeActivity extends AppCompatActivity {
                 web.goBack();
                 return true;
             } else {
-                super.onBackPressed();
+                 super.onBackPressed();
             }
         }
         return super.onOptionsItemSelected(item);

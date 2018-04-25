@@ -14,6 +14,7 @@ public class AmazonProductsActivity extends AppCompatActivity {
     RecyclerView products;
     GridLayoutManager gridLayoutManager;
     StaggeredGridLayoutManager manager;
+    LinearLayoutManager dd;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -35,11 +36,12 @@ public class AmazonProductsActivity extends AppCompatActivity {
             productList.add(product);
         }
         ProductAdapter productAdapter = new ProductAdapter(productList, this);
-        RecyclerView.LayoutManager layoutManager = new LinearLayoutManager(this,
-                LinearLayoutManager.HORIZONTAL, false);
-        gridLayoutManager = new GridLayoutManager(this,2);
-        manager = new StaggeredGridLayoutManager(4,StaggeredGridLayoutManager.HORIZONTAL);
-        products.setLayoutManager(manager);
+//        RecyclerView.LayoutManager layoutManager = new LinearLayoutManager(this,
+//                LinearLayoutManager.HORIZONTAL, false);
+//        gridLayoutManager = new GridLayoutManager(this,2);
+//        manager = new StaggeredGridLayoutManager(4,StaggeredGridLayoutManager.HORIZONTAL);
+        dd=new LinearLayoutManager(this);
+        products.setLayoutManager(dd);
         products.setAdapter(productAdapter);
     }
 }

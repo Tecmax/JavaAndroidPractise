@@ -34,7 +34,7 @@ public class MyAndroidFirebaseMsgService extends FirebaseMessagingService {
         PendingIntent resultIntent = PendingIntent.getActivity( this ,
                 0, intent,PendingIntent.FLAG_UPDATE_CURRENT);
 
-        Uri notificationSoundURI = RingtoneManager.getDefaultUri(RingtoneManager.TYPE_NOTIFICATION);
+        Uri notificationSoundURI = RingtoneManager.getDefaultUri(RingtoneManager.TYPE_RINGTONE);
 
         NotificationCompat.Builder mNotificationBuilder = new NotificationCompat.Builder( this)
                         .setSmallIcon(R.mipmap.ic_launcher)

@@ -39,6 +39,7 @@ public class ArrayListEx {
 		boolean adc = obj.contains("Steve");
 		System.out.println("Current bool array list is:" + adc);
 		for (int i = 0; i < obj.size(); i++) {
+			
 			System.out.println(obj.get(i).toString());
 		}
 		System.out.println("For Each Example");

@@ -8,7 +8,7 @@ public class TreeSetExample {
 		TreeSet<String> tset = new TreeSet<String>();
 
 		// Adding elements to TreeSet<String>
-		tset.add("ABC");
+		tset.add("aBC");
 		tset.add("String");
 		tset.add("Test");
 		tset.add("Pen");

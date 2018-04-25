@@ -14,10 +14,10 @@ public class MultithreadingDemo implements Runnable {
 			Thread ob = new Thread(obj);
 			ob.start();
 			System.out.println("Hello W");
-//			ob.start();
+			obj.start();
 			Thread.sleep(4000);
 			System.out.println("Hello X");
-			ob.run();
+			obj.run();
 			
 		} catch (IllegalThreadStateException e) {
 			System.out.println("Connot Start Thread Twice");
@@ -28,8 +28,6 @@ public class MultithreadingDemo implements Runnable {
 
 	@Override
 	public void run() {
-		
 		System.out.println("Running From Thread Instance");
-
 	}
 }

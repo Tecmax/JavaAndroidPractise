@@ -26,7 +26,7 @@ public class ProductAdapter extends RecyclerView.Adapter<ProductAdapter.PView> {
 
     @Override
     public ProductAdapter.PView onCreateViewHolder(ViewGroup parent, int viewType) {
-        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.aproducts,
+        View view = LayoutInflater.from(activity).inflate(R.layout.aproducts,
                 parent, false);
 
         return new PView(view);

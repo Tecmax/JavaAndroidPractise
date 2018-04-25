@@ -32,14 +32,14 @@ public class MainActivity extends AppCompatActivity {
         relativeLayout = findViewById(R.id.parentPanel);
         final Button su = findViewById(R.id.signUp);
         TextView we = findViewById(R.id.tvWelcome);
-        su.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                startActivity(new Intent(MainActivity.this, SignUpActivity.class));
-            }
-        });
+//        su.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                startActivity(new Intent(MainActivity.this, SignUpActivity.class));
+//            }
+//        });
         ImageView sus = findViewById(R.id.logo);
-        sus.setOnClickListener(new View.OnClickListener() {
+        su.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 startActivity(new Intent(MainActivity.this, AmazonProductsActivity.class));

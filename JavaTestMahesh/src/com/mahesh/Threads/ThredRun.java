@@ -6,6 +6,7 @@ public class ThredRun implements Runnable{
 		obj.run();
 	     Thread tobj =new Thread(obj);  
 	     tobj.start();  
+	     tobj.start(); 
 	 }
 	@Override
 	public void run() {

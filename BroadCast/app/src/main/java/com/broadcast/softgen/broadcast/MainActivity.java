@@ -39,6 +39,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
         getPermissions(this, REQUEST_CODE_READ_PHONE_STATE);
         recyclerView = (RecyclerView) findViewById(R.id.listRecycle);
         alertText = (TextView) findViewById(R.id.alertText);

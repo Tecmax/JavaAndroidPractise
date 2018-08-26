@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">WeatherReport</string>
+    <string name="enter_location">Enter Location</string>
+    <string name="temp_min">%1$s C \ %2$s C</string>
+    <string name="temp_type">%1$s</string>
+    <string name="temp_desc">%1$s / %2$s</string>
+</resources>

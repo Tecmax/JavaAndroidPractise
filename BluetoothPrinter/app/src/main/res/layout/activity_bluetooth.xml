@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BluetoothActivity">
+
+    <ListView
+        android:id="@+id/pairedList"
+        android:layout_width="match_parent"
+        android:layout_height="150dp" />
+
+    <EditText
+        android:id="@+id/etText"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/print"
+        android:layout_below="@+id/pairedList"
+        android:background="@color/colorPrimary"
+        android:hint="enter Text"
+        android:textColorHint="@android:color/white"
+        android:inputType="text"
+        android:textColor="@android:color/white" />
+
+    <Button
+        android:id="@+id/print"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="Print" />
+</RelativeLayout>

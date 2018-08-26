@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingEnd="15dp"
+    android:paddingStart="15dp"
+    tools:context="com.walmart.downloadimages.activity.DownloadActivity">
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/tilDownload"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/download"
+        android:layout_marginBottom="15dp">
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/etDownload"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/enter_url" />
+    </android.support.design.widget.TextInputLayout>
+
+    <Button
+        android:id="@+id/download"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_margin="5dp"
+        android:background="@color/colorPrimary"
+        android:text="@string/download"
+        android:textColor="@android:color/white" />
+
+    <Button
+        android:id="@+id/playYoutube"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/download"
+        android:layout_margin="5dp"
+        android:background="@color/colorPrimary"
+        android:text="@string/youtube"
+        android:textColor="@android:color/white" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="15dp" />
+</RelativeLayout>

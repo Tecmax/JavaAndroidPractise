@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">DownloadImages</string>
+    <string name="enter_url">Enter URL</string>
+    <string name="youtube">Test Counter</string>
+    <string name="download">Download</string>
+    <string name="url_download">Please Enter the Link</string>
+</resources>

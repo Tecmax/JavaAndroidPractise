@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <ProgressBar
+        android:id="@+id/progress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/counter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:layout_marginTop="15dp"
+        android:background="@color/colorPrimary"
+        android:text="Hello"
+        android:textColor="@android:color/white" />
+
+    <TextView
+        android:id="@+id/countValue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Count is testing"
+        android:textStyle="bold" />
+</LinearLayout>

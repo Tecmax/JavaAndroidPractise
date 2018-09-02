@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.tecmax.henna.dab.SignUpActivity">
+
+    <EditText
+        android:id="@+id/dbUn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="UserName" />
+
+    <EditText
+        android:id="@+id/dbMobile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Mobile Number" />
+
+    <EditText
+        android:id="@+id/dbeM"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Email" />
+
+    <EditText
+        android:id="@+id/dbADD"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Address" />
+
+    <EditText
+        android:id="@+id/dbPA"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Password" />
+
+    <EditText
+        android:id="@+id/dbcPa"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Confirm Password" />
+
+    <Button
+        android:id="@+id/signUp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="SignUp" />
+
+    <Button
+        android:id="@+id/getAll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Get All details" />
+
+</LinearLayout>

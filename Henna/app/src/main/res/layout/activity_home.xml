@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.tecmax.henna.HomeActivity">
+
+    <SeekBar
+        android:id="@+id/sbSeek"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <RatingBar
+        android:id="@+id/rbstar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:stepSize="1" />
+
+    <Button
+        android:id="@+id/btAlert"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Alert Harsha" />
+
+    <Spinner
+        android:id="@+id/spState"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</LinearLayout>

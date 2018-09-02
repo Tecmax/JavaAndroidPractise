@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">Henna</string>
+    <string name="title_activity_sign_up">SignUpActivity</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="testlogo">TestLogo</string>
+    <string name="login">Login</string>
+    <string name="no_account">Don\'t Have Account</string>
+    <string name="create_here"><u>Create Here</u></string>
+    <string name="title_activity_temp">TempActivity</string>
+    <string name="title_activity_tavcsad">TavcsadActivity</string>
+    <string name="action_settings">Settings</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+    <string name="title_activity_movie_description">MovieDescriptionActivity</string>
+    <string name="title_activity_main">MainActivity</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="title_activity_import">ImportActivity</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_location">Map</string>
+    <string name="title_activity_web">WebActivity</string>
+</resources>

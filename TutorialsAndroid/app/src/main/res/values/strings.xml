@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">TutorialsAndroid</string>
+    <string name="username">Username</string>
+    <string name="label_signup">Dont\'t Have Account</string>
+
+    <string-array name="countires">
+        <item>India</item>
+        <item>SA</item>
+        <item>ENG</item>
+        <item>USA</item>
+        <item>AUS</item>
+        <item>CAN</item>
+        <item>PAK</item>
+    </string-array>
+</resources>

@@ -161,7 +161,7 @@ public class PrintDemo extends Activity {
         output += "Tax                 :" + printStars(printValues.getTax());
         output += "--------------------------------";
         output += "Grand Total         :" + printStars(printValues.getGrandTotal());
-        output += "--------------------------------";
+        output += "--------------------------------\n";
         return output;
     }
 

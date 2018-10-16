@@ -1,2 +1,2 @@
 # JavaAndroidPractise
-only for students repo practicing and future reffrence
+only for students repository practicing and future referrence

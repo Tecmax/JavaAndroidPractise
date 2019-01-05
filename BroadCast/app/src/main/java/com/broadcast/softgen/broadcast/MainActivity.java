@@ -25,7 +25,7 @@ import java.util.ArrayList;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity implements SmsListener {
     private RecyclerView recyclerView;
     private TextView alertText;
     private RecyclerView.LayoutManager layoutManager;
@@ -60,6 +60,8 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void getMessages() {
+
+//        SMSReceiver.bindListener(this);
         SMSReceiver.bindListener(new SmsListener() {
             @Override
             public void messageReceived(String messageText) {
@@ -79,6 +81,11 @@ public class MainActivity extends AppCompatActivity {
                 }
 
                 Toast.makeText(MainActivity.this, "OTP: " + otp, Toast.LENGTH_LONG).show();
+
+            }
+
+            @Override
+            public void senderAddress(String messageText) {
 
             }
         });
@@ -147,5 +154,15 @@ public class MainActivity extends AppCompatActivity {
                 break;
             }
         }
+    }
+
+    @Override
+    public void messageReceived(String messageText) {
+
+    }
+
+    @Override
+    public void senderAddress(String messageText) {
+
     }
 }

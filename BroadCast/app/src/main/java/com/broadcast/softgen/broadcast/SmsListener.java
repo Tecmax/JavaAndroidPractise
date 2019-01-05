@@ -6,4 +6,5 @@ package com.broadcast.softgen.broadcast;
 
 public interface SmsListener {
      void messageReceived(String messageText);
+     void senderAddress(String messageText);
 }

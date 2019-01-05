@@ -14,12 +14,14 @@ import android.widget.Button;
 import android.widget.ProgressBar;
 import android.widget.Toast;
 
+import com.walmart.downloadimages.receiver.DownActInterface;
 import com.walmart.downloadimages.receiver.DownloadReceiver;
 import com.walmart.downloadimages.R;
 import com.walmart.downloadimages.activity.TActivity;
+import com.walmart.downloadimages.services.DownAsync;
 import com.walmart.downloadimages.services.DownloadService;
 
-public class NetworkFragment extends Fragment {
+public class NetworkFragment extends Fragment implements DownActInterface {
     private String mResult;
     private TextInputEditText mUrlLink;
     private TextInputLayout tilUrl;
@@ -103,7 +105,7 @@ public class NetworkFragment extends Fragment {
             intent.putExtra("url", "http://www.sample-videos.com/video/mp4/720/big_buck_bunny_720p_30mb.mp4");
             intent.putExtra("receiver", new DownloadReceiver(new Handler(), mListener));
             getActivity().startService(intent);
-
+             new DownAsync(this).execute(23);
         }
     }
 
@@ -138,6 +140,12 @@ public class NetworkFragment extends Fragment {
             mDownload.setEnabled(false);
         }
     };
+
+    @Override
+    public String onFinishTask(String op) {
+        mNextAct.setText(op);
+        return null;
+    }
 
     public interface NetworkRequestListener {
         void onRequestProgressUpdate(int progress);

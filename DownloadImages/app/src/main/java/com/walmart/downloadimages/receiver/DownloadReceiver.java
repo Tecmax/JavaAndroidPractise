@@ -9,9 +9,10 @@ import com.walmart.downloadimages.services.DownloadService;
 
 public class DownloadReceiver extends ResultReceiver {
     NetworkFragment.NetworkRequestListener requestListener;
-    public DownloadReceiver(Handler handler,NetworkFragment.NetworkRequestListener mListener) {
+
+    public DownloadReceiver(Handler handler, NetworkFragment.NetworkRequestListener mListener) {
         super(handler);
-        requestListener=mListener;
+        requestListener = mListener;
     }
 
     @Override

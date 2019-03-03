@@ -10,15 +10,12 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 
 import com.example.mahesha.utility.Session;
-import com.crashlytics.android.Crashlytics;
-import io.fabric.sdk.android.Fabric;
 
 public class LauncherActivity extends AppCompatActivity {
     private Session session;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        Fabric.with(this, new Crashlytics());
         setContentView(R.layout.activity_launcher);
         session = new Session(LauncherActivity.this);
 //        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);

@@ -13,7 +13,6 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 
-import com.crashlytics.android.Crashlytics;
 import com.example.mahesha.animations.AnimationsActivity;
 import com.example.mahesha.databasehandellers.DBHelper;
 import com.example.mahesha.fragmentexamples.TTFragmentActivity;
@@ -32,15 +31,12 @@ import com.example.mahesha.widgets.GoogleActivity;
 
 import java.util.Locale;
 
-import io.fabric.sdk.android.Fabric;
-
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
     Locale myLocale;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        Fabric.with(this, new Crashlytics());
         setContentView(R.layout.activity_main);
         DBHelper db = new DBHelper(this);
 //        Toast.makeText(this, "On Create", Toast.LENGTH_SHORT).show();

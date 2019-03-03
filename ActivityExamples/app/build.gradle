@@ -16,12 +16,11 @@ repositories {
 
 
 android {
-    compileSdkVersion 27
-    buildToolsVersion '28.0.2'
+    compileSdkVersion 28
     defaultConfig {
         applicationId "com.example.mahesha.activityexamples"
         minSdkVersion 18
-        targetSdkVersion 27
+        targetSdkVersion 28
         versionCode 2
         versionName "1.0"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
@@ -61,20 +60,27 @@ android {
 
 dependencies {
     implementation fileTree(include: ['*.jar'], dir: 'libs')
-    implementation 'com.android.support:appcompat-v7:27.1.1'
+    implementation 'com.android.support:appcompat-v7:28.0.0'
     implementation 'com.google.android.gms:play-services-maps:9.2.1'
-    implementation 'com.android.support:support-v4:27.1.1'
-    implementation 'com.android.support:design:27.1.1'
+    implementation 'com.android.support:support-v4:28.0.0'
+    implementation 'com.android.support:design:28.0.0'
     implementation 'com.weiwangcn.betterspinner:library-material:1.1.0'
     implementation 'com.google.android.gms:play-services-auth:9.2.1'
-    implementation 'com.android.support:cardview-v7:27.1.1'
-    implementation 'com.android.support:recyclerview-v7:27.1.1'
+    implementation 'com.android.support:cardview-v7:28.0.0'
+    implementation 'com.android.support:recyclerview-v7:28.0.0'
     implementation 'com.mikhaellopez:circularimageview:3.0.2'
     implementation 'com.google.android.gms:play-services-appindexing:9.2.1'
     implementation 'com.google.android.gms:play-services-location:9.2.1'
     implementation 'com.jakewharton:butterknife:8.5.1'
-    implementation 'com.google.code.gson:gson:2.7'
+    implementation 'com.google.code.gson:gson:2.8.5'
 
+    implementation 'com.squareup.retrofit2:retrofit:2.5.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.5.0'
+
+
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test:runner:1.0.2'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
     def power_mockito_version = "2.0.0-beta.5"
     testImplementation 'junit:junit:4.12'
     testImplementation 'org.json:json:20171018'

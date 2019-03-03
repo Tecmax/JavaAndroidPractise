@@ -3,7 +3,6 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/AndroidContentProvider.iml" filepath="$PROJECT_DIR$/AndroidContentProvider.iml" />
-      <module fileurl="file://C:\Personnel Mahesh\AndroidProjectTec\AndroidContentProvider\androidcontentproviderusage\androidcontentproviderusage.iml" filepath="C:\Personnel Mahesh\AndroidProjectTec\AndroidContentProvider\androidcontentproviderusage\androidcontentproviderusage.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>
   </component>

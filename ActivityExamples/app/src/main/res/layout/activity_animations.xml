@@ -24,7 +24,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/textView"
         android:layout_centerHorizontal="true"
-        android:text="Tutorialspoint"
+        android:text="Tecmax"
         android:textColor="#ff3eff0f"
         android:textSize="35dp" />
 
